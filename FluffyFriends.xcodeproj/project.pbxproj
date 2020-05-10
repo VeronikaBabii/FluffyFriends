@@ -3,19 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1519DBB22462F3CC0058F2C9 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519DBB12462F3CC0058F2C9 /* Cat.swift */; };
+		1519DBB62463FF420058F2C9 /* CatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519DBB52463FF420058F2C9 /* CatViewController.swift */; };
+		1545C9172468736D00F492D4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1545C9162468736D00F492D4 /* TabBarViewController.swift */; };
 		15A5BC6724617F1500A93B02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A5BC6624617F1500A93B02 /* AppDelegate.swift */; };
 		15A5BC6924617F1500A93B02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A5BC6824617F1500A93B02 /* SceneDelegate.swift */; };
 		15A5BC6B24617F1500A93B02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A5BC6A24617F1500A93B02 /* ViewController.swift */; };
 		15A5BC6E24617F1500A93B02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A5BC6C24617F1500A93B02 /* Main.storyboard */; };
 		15A5BC7024617F1600A93B02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A5BC6F24617F1600A93B02 /* Assets.xcassets */; };
 		15A5BC7324617F1600A93B02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A5BC7124617F1600A93B02 /* LaunchScreen.storyboard */; };
+		15A5BC7D2461824200A93B02 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A5BC7C2461824200A93B02 /* SignUpViewController.swift */; };
+		15A5BC7F2461824C00A93B02 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A5BC7E2461824C00A93B02 /* LoginViewController.swift */; };
+		15A5BC812461825800A93B02 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A5BC802461825800A93B02 /* HomeViewController.swift */; };
+		15A5BC832461A76600A93B02 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A5BC822461A76600A93B02 /* Utilities.swift */; };
+		15A5BC852461A77500A93B02 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A5BC842461A77500A93B02 /* Constants.swift */; };
+		15A5BC872461BFF700A93B02 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A5BC862461BFF700A93B02 /* GoogleService-Info.plist */; };
+		763DE62B9636B83990D9D1FE /* Pods_FluffyFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60259BD95BC79CBA76BE5888 /* Pods_FluffyFriends.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1519DBB12462F3CC0058F2C9 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		1519DBB52463FF420058F2C9 /* CatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewController.swift; sourceTree = "<group>"; };
+		1545C9162468736D00F492D4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		15A5BC6324617F1500A93B02 /* FluffyFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FluffyFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A5BC6624617F1500A93B02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15A5BC6824617F1500A93B02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +37,15 @@
 		15A5BC6F24617F1600A93B02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15A5BC7224617F1600A93B02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15A5BC7424617F1600A93B02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15A5BC7C2461824200A93B02 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		15A5BC7E2461824C00A93B02 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		15A5BC802461825800A93B02 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		15A5BC822461A76600A93B02 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		15A5BC842461A77500A93B02 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		15A5BC862461BFF700A93B02 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60259BD95BC79CBA76BE5888 /* Pods_FluffyFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FluffyFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7140BC8161E06C077F9EF056 /* Pods-FluffyFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FluffyFriends.release.xcconfig"; path = "Target Support Files/Pods-FluffyFriends/Pods-FluffyFriends.release.xcconfig"; sourceTree = "<group>"; };
+		9B0AD462BE4A58FC58563F5C /* Pods-FluffyFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FluffyFriends.debug.xcconfig"; path = "Target Support Files/Pods-FluffyFriends/Pods-FluffyFriends.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				763DE62B9636B83990D9D1FE /* Pods_FluffyFriends.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1519DBB02462F3B50058F2C9 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				1519DBB12462F3CC0058F2C9 /* Cat.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
 		15A5BC5A24617F1500A93B02 = {
 			isa = PBXGroup;
 			children = (
 				15A5BC6524617F1500A93B02 /* FluffyFriends */,
 				15A5BC6424617F1500A93B02 /* Products */,
+				78C6A415347BB76BFA5E6E30 /* Pods */,
+				2F66D5F505E0205751F560E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +91,55 @@
 			children = (
 				15A5BC6624617F1500A93B02 /* AppDelegate.swift */,
 				15A5BC6824617F1500A93B02 /* SceneDelegate.swift */,
-				15A5BC6A24617F1500A93B02 /* ViewController.swift */,
+				15A5BC7A24617F2E00A93B02 /* Helpers */,
+				15A5BC7B24617F3500A93B02 /* View Controllers */,
+				1519DBB02462F3B50058F2C9 /* Files */,
 				15A5BC6C24617F1500A93B02 /* Main.storyboard */,
 				15A5BC6F24617F1600A93B02 /* Assets.xcassets */,
 				15A5BC7124617F1600A93B02 /* LaunchScreen.storyboard */,
+				15A5BC862461BFF700A93B02 /* GoogleService-Info.plist */,
 				15A5BC7424617F1600A93B02 /* Info.plist */,
 			);
 			path = FluffyFriends;
+			sourceTree = "<group>";
+		};
+		15A5BC7A24617F2E00A93B02 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				15A5BC822461A76600A93B02 /* Utilities.swift */,
+				15A5BC842461A77500A93B02 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		15A5BC7B24617F3500A93B02 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				15A5BC6A24617F1500A93B02 /* ViewController.swift */,
+				15A5BC7C2461824200A93B02 /* SignUpViewController.swift */,
+				15A5BC7E2461824C00A93B02 /* LoginViewController.swift */,
+				1545C9162468736D00F492D4 /* TabBarViewController.swift */,
+				15A5BC802461825800A93B02 /* HomeViewController.swift */,
+				1519DBB52463FF420058F2C9 /* CatViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2F66D5F505E0205751F560E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60259BD95BC79CBA76BE5888 /* Pods_FluffyFriends.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78C6A415347BB76BFA5E6E30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B0AD462BE4A58FC58563F5C /* Pods-FluffyFriends.debug.xcconfig */,
+				7140BC8161E06C077F9EF056 /* Pods-FluffyFriends.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15A5BC7724617F1600A93B02 /* Build configuration list for PBXNativeTarget "FluffyFriends" */;
 			buildPhases = (
+				BFA400E2D98DEA16F9590F31 /* [CP] Check Pods Manifest.lock */,
 				15A5BC5F24617F1500A93B02 /* Sources */,
 				15A5BC6024617F1500A93B02 /* Frameworks */,
 				15A5BC6124617F1500A93B02 /* Resources */,
+				9E4FE7C7B5154995E8FCED54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +203,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				15A5BC7324617F1600A93B02 /* LaunchScreen.storyboard in Resources */,
+				15A5BC872461BFF700A93B02 /* GoogleService-Info.plist in Resources */,
 				15A5BC7024617F1600A93B02 /* Assets.xcassets in Resources */,
 				15A5BC6E24617F1500A93B02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E4FE7C7B5154995E8FCED54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FluffyFriends/Pods-FluffyFriends-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FluffyFriends/Pods-FluffyFriends-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FluffyFriends/Pods-FluffyFriends-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFA400E2D98DEA16F9590F31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FluffyFriends-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15A5BC5F24617F1500A93B02 /* Sources */ = {
@@ -140,7 +260,15 @@
 			files = (
 				15A5BC6B24617F1500A93B02 /* ViewController.swift in Sources */,
 				15A5BC6724617F1500A93B02 /* AppDelegate.swift in Sources */,
+				1545C9172468736D00F492D4 /* TabBarViewController.swift in Sources */,
+				15A5BC832461A76600A93B02 /* Utilities.swift in Sources */,
+				15A5BC7D2461824200A93B02 /* SignUpViewController.swift in Sources */,
+				15A5BC7F2461824C00A93B02 /* LoginViewController.swift in Sources */,
+				1519DBB22462F3CC0058F2C9 /* Cat.swift in Sources */,
+				1519DBB62463FF420058F2C9 /* CatViewController.swift in Sources */,
 				15A5BC6924617F1500A93B02 /* SceneDelegate.swift in Sources */,
+				15A5BC812461825800A93B02 /* HomeViewController.swift in Sources */,
+				15A5BC852461A77500A93B02 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +410,7 @@
 		};
 		15A5BC7824617F1600A93B02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B0AD462BE4A58FC58563F5C /* Pods-FluffyFriends.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,12 +422,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.veronikababii.FluffyFriends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		15A5BC7924617F1600A93B02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7140BC8161E06C077F9EF056 /* Pods-FluffyFriends.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.veronikababii.FluffyFriends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
