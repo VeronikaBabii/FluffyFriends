@@ -14,4 +14,11 @@ struct Cat:Decodable {
     let description: String
     let origin: String
     let life_span: String
+    let intelligence: Int
+    let hypoallergenic: Int
+    let weight: CatWeight
+}
+
+struct CatWeight:Decodable {
+    let metric: String
 }

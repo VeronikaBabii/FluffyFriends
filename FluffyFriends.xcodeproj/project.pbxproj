@@ -60,14 +60,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1519DBB02462F3B50058F2C9 /* Files */ = {
-			isa = PBXGroup;
-			children = (
-				1519DBB12462F3CC0058F2C9 /* Cat.swift */,
-			);
-			path = Files;
-			sourceTree = "<group>";
-		};
 		15A5BC5A24617F1500A93B02 = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +85,6 @@
 				15A5BC6824617F1500A93B02 /* SceneDelegate.swift */,
 				15A5BC7A24617F2E00A93B02 /* Helpers */,
 				15A5BC7B24617F3500A93B02 /* View Controllers */,
-				1519DBB02462F3B50058F2C9 /* Files */,
 				15A5BC6C24617F1500A93B02 /* Main.storyboard */,
 				15A5BC6F24617F1600A93B02 /* Assets.xcassets */,
 				15A5BC7124617F1600A93B02 /* LaunchScreen.storyboard */,
@@ -121,6 +112,7 @@
 				1545C9162468736D00F492D4 /* TabBarViewController.swift */,
 				15A5BC802461825800A93B02 /* HomeViewController.swift */,
 				1519DBB52463FF420058F2C9 /* CatViewController.swift */,
+				1519DBB12462F3CC0058F2C9 /* Cat.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
