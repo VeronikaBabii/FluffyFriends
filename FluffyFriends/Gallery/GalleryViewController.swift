@@ -23,7 +23,7 @@ class GalleryViewController: UIViewController, UICollectionViewDataSource {
         
         collectionView.dataSource = self
         
-        let url = URL(string: "https://api.thecatapi.com/v1/images/search?limit=100")
+        let url = URL(string: "https://api.thecatapi.com/v1/images/search?limit=21")
         URLSession.shared.dataTask(with: url!) { (data, response, error) in
             
             if error == nil {
@@ -46,7 +46,6 @@ class GalleryViewController: UIViewController, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "customCell", for: indexPath) as! CustomCollectionViewCell
         
-        // let baseUrl = "https://api.opendota.com"
         let completeUrl = heroes[indexPath.row].url
         
         cell.imageView.downloaded(from: completeUrl)

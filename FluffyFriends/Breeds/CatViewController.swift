@@ -26,7 +26,6 @@ class CatViewController: UIViewController {
     @IBOutlet weak var threeElemView: UIView!
     @IBOutlet weak var descriptionView: UIView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
