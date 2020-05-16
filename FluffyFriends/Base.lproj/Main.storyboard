@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -261,30 +262,101 @@
             </objects>
             <point key="canvasLocation" x="4528.985507246377" y="-129.24107142857142"/>
         </scene>
-        <!--Item 2-->
+        <!--Gallery-->
         <scene sceneID="9Vh-Dv-RCf">
             <objects>
-                <viewController id="WXH-4n-hcE" sceneMemberID="viewController">
+                <viewController id="WXH-4n-hcE" customClass="GalleryViewController" customModule="FluffyFriends" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jpP-GY-KmR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cat gallery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzt-vv-caa">
-                                <rect key="frame" x="56" y="428" width="303" height="41"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3UG-QQ-Iyt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Maf-JA-qP7">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customCell" id="pGI-rz-9zg" customClass="CustomCollectionViewCell" customModule="FluffyFriends" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="IwT-bL-Zhu">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8zK-aA-dFx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="b19-cb-Dev"/>
+                                                        <constraint firstAttribute="width" constant="100" id="cP2-MW-YQP"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8zK-aA-dFx" firstAttribute="leading" secondItem="IwT-bL-Zhu" secondAttribute="leading" id="17O-wM-7DK"/>
+                                                <constraint firstAttribute="trailing" secondItem="8zK-aA-dFx" secondAttribute="trailing" id="1iL-8u-LlM"/>
+                                                <constraint firstItem="8zK-aA-dFx" firstAttribute="centerX" secondItem="IwT-bL-Zhu" secondAttribute="centerX" id="NaW-hA-T1e"/>
+                                                <constraint firstAttribute="bottom" secondItem="8zK-aA-dFx" secondAttribute="bottom" id="jm9-Qt-0hY"/>
+                                                <constraint firstItem="8zK-aA-dFx" firstAttribute="top" secondItem="IwT-bL-Zhu" secondAttribute="top" id="rM1-He-YNs"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="100" height="100"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="8zK-aA-dFx" id="YqT-73-7eR"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3UG-QQ-Iyt" firstAttribute="top" secondItem="Mp1-4O-vJY" secondAttribute="top" id="DFu-kF-nY3"/>
+                            <constraint firstItem="Mp1-4O-vJY" firstAttribute="bottom" secondItem="3UG-QQ-Iyt" secondAttribute="bottom" id="NU1-A6-pOv"/>
+                            <constraint firstItem="Mp1-4O-vJY" firstAttribute="trailing" secondItem="3UG-QQ-Iyt" secondAttribute="trailing" id="fRh-V7-9Ho"/>
+                            <constraint firstItem="3UG-QQ-Iyt" firstAttribute="leading" secondItem="Mp1-4O-vJY" secondAttribute="leading" id="hVA-jh-yGb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mp1-4O-vJY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gallery" image="cat-profile" id="YPH-Hk-mGI"/>
+                    <connections>
+                        <outlet property="collectionView" destination="3UG-QQ-Iyt" id="4lg-H7-yAU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbT-Ah-NsB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3793" y="-796"/>
+        </scene>
+        <!--Quiz-->
+        <scene sceneID="ylZ-ef-BQd">
+            <objects>
+                <viewController id="OI4-yA-EHy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZIC-8z-lYj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dwn-9V-kMu">
+                                <rect key="frame" x="54" y="237" width="306" height="192"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guess the cat breed by the photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fK-ZN-gy6">
+                                <rect key="frame" x="54" y="122" width="306" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Mp1-4O-vJY"/>
+                        <viewLayoutGuide key="safeArea" id="WDl-jv-4Cv"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="YPH-Hk-mGI"/>
+                    <tabBarItem key="tabBarItem" title="Quiz" image="quiz" id="8Ju-Jl-TgY"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mbT-Ah-NsB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BrK-oD-7j9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3794" y="521"/>
+            <point key="canvasLocation" x="3792.753623188406" y="520.98214285714289"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="rrB-yj-XZP">
@@ -298,6 +370,7 @@
                     <connections>
                         <segue destination="za6-5D-Wpj" kind="relationship" relationship="viewControllers" id="R2g-vt-Ln0"/>
                         <segue destination="WXH-4n-hcE" kind="relationship" relationship="viewControllers" id="19h-pc-mnJ"/>
+                        <segue destination="OI4-yA-EHy" kind="relationship" relationship="viewControllers" id="htZ-fS-uwB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mc3-m6-OD6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -317,7 +390,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="qQT-at-Owi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -593,11 +666,11 @@
             </objects>
             <point key="canvasLocation" x="1598.5507246376812" y="520.98214285714289"/>
         </scene>
-        <!--Item-->
+        <!--Breeds-->
         <scene sceneID="jDl-Zc-FEV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="za6-5D-Wpj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="8O7-aG-OlU"/>
+                    <tabBarItem key="tabBarItem" title="Breeds" image="cat-footprint" id="8O7-aG-OlU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xoI-St-5WV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -616,5 +689,8 @@
     <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
     <resources>
         <image name="back" width="24" height="24"/>
+        <image name="cat-footprint" width="25" height="25"/>
+        <image name="cat-profile" width="25" height="25"/>
+        <image name="quiz" width="25" height="25"/>
     </resources>
 </document>

@@ -26,6 +26,7 @@ class CatViewController: UIViewController {
     @IBOutlet weak var threeElemView: UIView!
     @IBOutlet weak var descriptionView: UIView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
@@ -35,7 +36,7 @@ class CatViewController: UIViewController {
         //view.backgroundColor = UIColor.init(red: 241/255, green: 160/255, blue: 143/255, alpha: 1)
         
         breedLabel.text = cat?.name
-        lifeLabel.text = cat?.life_span
+        lifeLabel.text = cat!.life_span
         countryLabel.text = cat?.origin
         descriptionLabel.text = cat?.description
         
