@@ -24,7 +24,6 @@
 		15A5BC872461BFF700A93B02 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15A5BC862461BFF700A93B02 /* GoogleService-Info.plist */; };
 		15ED74B7246F14B10080DF22 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED74B6246F14B00080DF22 /* GalleryViewController.swift */; };
 		15ED74DF247005550080DF22 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED74DE247005550080DF22 /* CustomCollectionViewCell.swift */; };
-		15ED74E424708ACB0080DF22 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ED74E324708ACB0080DF22 /* QuizViewController.swift */; };
 		763DE62B9636B83990D9D1FE /* Pods_FluffyFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60259BD95BC79CBA76BE5888 /* Pods_FluffyFriends.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +47,6 @@
 		15A5BC862461BFF700A93B02 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		15ED74B6246F14B00080DF22 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		15ED74DE247005550080DF22 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
-		15ED74E324708ACB0080DF22 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		60259BD95BC79CBA76BE5888 /* Pods_FluffyFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FluffyFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7140BC8161E06C077F9EF056 /* Pods-FluffyFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FluffyFriends.release.xcconfig"; path = "Target Support Files/Pods-FluffyFriends/Pods-FluffyFriends.release.xcconfig"; sourceTree = "<group>"; };
 		9B0AD462BE4A58FC58563F5C /* Pods-FluffyFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FluffyFriends.debug.xcconfig"; path = "Target Support Files/Pods-FluffyFriends/Pods-FluffyFriends.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 				15A5BC7B24617F3500A93B02 /* View Controllers */,
 				15ED74BB246F1E6A0080DF22 /* Breeds */,
 				15ED74B8246F19210080DF22 /* Gallery */,
-				15ED74E0247089200080DF22 /* Quiz */,
 				15A5BC6C24617F1500A93B02 /* Main.storyboard */,
 				15A5BC6F24617F1600A93B02 /* Assets.xcassets */,
 				15A5BC7124617F1600A93B02 /* LaunchScreen.storyboard */,
@@ -140,14 +137,6 @@
 				1519DBB12462F3CC0058F2C9 /* Cat.swift */,
 			);
 			path = Breeds;
-			sourceTree = "<group>";
-		};
-		15ED74E0247089200080DF22 /* Quiz */ = {
-			isa = PBXGroup;
-			children = (
-				15ED74E324708ACB0080DF22 /* QuizViewController.swift */,
-			);
-			path = Quiz;
 			sourceTree = "<group>";
 		};
 		2F66D5F505E0205751F560E3 /* Frameworks */ = {
@@ -284,7 +273,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				15A5BC6B24617F1500A93B02 /* ViewController.swift in Sources */,
-				15ED74E424708ACB0080DF22 /* QuizViewController.swift in Sources */,
 				15A5BC6724617F1500A93B02 /* AppDelegate.swift in Sources */,
 				1545C9172468736D00F492D4 /* TabBarViewController.swift in Sources */,
 				15ED74DF247005550080DF22 /* CustomCollectionViewCell.swift in Sources */,

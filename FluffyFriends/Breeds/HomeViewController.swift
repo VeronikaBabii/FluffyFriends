@@ -16,12 +16,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     var cats = [Cat]()
     
-   
+    var allBreeds = [String]()
+    var searchBreed = [String]()
+    
+    var searching = false
+    
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //printHello()
         
         downloadJSON {
             self.tableView.reloadData()
@@ -29,16 +33,27 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tableView.delegate = self
         tableView.dataSource = self
+        searchBar.delegate = self
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cats.count
+        if searching {
+            return searchBreed.count
+        } else {
+            return cats.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        // put not here
+        allBreeds.append(cats[indexPath.row].name.capitalized)
         
-        cell.textLabel?.text = cats[indexPath.row].name.capitalized
+        if (searching) {
+            cell.textLabel?.text = searchBreed[indexPath.row]
+        } else {
+            cell.textLabel?.text = cats[indexPath.row].name.capitalized
+        }
         
         return cell
     }
@@ -75,20 +90,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }.resume()
     }
-    
-//    func printHello() {
-//        let db = Firestore.firestore()
-//        if let userId = Auth.auth().currentUser?.uid {
-//            db.collection("users").getDocuments { (snapshot, error) in
-//                if let error = error {
-//                    print("Error getting documents: \(error)")
-//                } else {
-//                    if let currentUserDoc = snapshot?.documents.first(where: { ($0["uid"] as? String) == userId }) {
-//                        let userFirstname = currentUserDoc["firstname"] as! String
-//                        self.helloLabel.text = "Hello, \(userFirstname)!"
-//                    }
-//                }
-//            }
-//        }
-//    }
+}
+
+extension HomeViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        // filter array of breeds
+        print(allBreeds)
+        searchBreed = allBreeds.filter({$0.prefix(searchText.count) == searchText})
+        searching = true
+        tableView.reloadData()
+    }
 }

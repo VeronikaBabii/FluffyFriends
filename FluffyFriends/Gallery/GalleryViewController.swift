@@ -14,7 +14,7 @@ struct CatImage:Decodable {
 
 class GalleryViewController: UIViewController, UICollectionViewDataSource {
     
-    var heroes = [CatImage]()
+    var cats = [CatImage]()
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -28,7 +28,7 @@ class GalleryViewController: UIViewController, UICollectionViewDataSource {
             
             if error == nil {
                 do {
-                    self.heroes = try JSONDecoder().decode([CatImage].self, from: data!)
+                    self.cats = try JSONDecoder().decode([CatImage].self, from: data!)
                 } catch {
                     print("JSON Error")
                 }
@@ -40,13 +40,13 @@ class GalleryViewController: UIViewController, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return heroes.count
+        return cats.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "customCell", for: indexPath) as! CustomCollectionViewCell
         
-        let completeUrl = heroes[indexPath.row].url
+        let completeUrl = cats[indexPath.row].url
         
         cell.imageView.downloaded(from: completeUrl)
         cell.imageView.clipsToBounds = true
@@ -54,6 +54,11 @@ class GalleryViewController: UIViewController, UICollectionViewDataSource {
         cell.imageView.contentMode = .scaleAspectFill
         
         return cell
+    }
+    
+    // open image on cell click
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        print("image clicked")
     }
 }
 

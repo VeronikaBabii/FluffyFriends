@@ -49,6 +49,10 @@ class CatViewController: UIViewController {
         
         //weightLabel.text = cat?.weight.metric
         
+        // wiki button
+//        let url = cat?.wikipedia_url
+//        print(url!)
+        
         Utilities.styleReadMoreButton(readButton)
         styleViews()
         

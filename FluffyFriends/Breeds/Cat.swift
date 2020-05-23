@@ -17,6 +17,7 @@ struct Cat:Decodable {
     let intelligence: Int
     let hypoallergenic: Int
     let weight: CatWeight
+   // let wikipedia_url: String
 }
 
 struct CatWeight:Decodable {

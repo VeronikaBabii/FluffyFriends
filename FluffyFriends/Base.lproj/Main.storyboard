@@ -264,6 +264,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="vdF-lm-1dn"/>
                     <connections>
+                        <outlet property="searchBar" destination="xmE-HV-mH8" id="AY6-Zp-Oc4"/>
                         <outlet property="tableView" destination="4qb-t6-R0N" id="9bG-Hz-TBx"/>
                         <segue destination="OEG-pp-NLS" kind="show" identifier="showDetails" id="rYS-TO-jmg"/>
                     </connections>
@@ -337,50 +338,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbT-Ah-NsB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3793" y="-796"/>
-        </scene>
-        <!--Quiz-->
-        <scene sceneID="ylZ-ef-BQd">
-            <objects>
-                <viewController id="OI4-yA-EHy" customClass="QuizViewController" customModule="FluffyFriends" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZIC-8z-lYj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess the cat breed by the photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fK-ZN-gy6">
-                                <rect key="frame" x="65.5" y="194" width="283" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="qQs-EF-jvB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dwn-9V-kMu">
-                                <rect key="frame" x="57" y="348" width="300" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="MiW-v8-n06"/>
-                                    <constraint firstAttribute="width" constant="300" id="WVC-Mw-nde"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="4fK-ZN-gy6" firstAttribute="centerX" secondItem="ZIC-8z-lYj" secondAttribute="centerX" id="987-kd-QdO"/>
-                            <constraint firstItem="4fK-ZN-gy6" firstAttribute="top" secondItem="WDl-jv-4Cv" secondAttribute="top" constant="150" id="G5h-8g-3wU"/>
-                            <constraint firstItem="dwn-9V-kMu" firstAttribute="centerX" secondItem="ZIC-8z-lYj" secondAttribute="centerX" id="Gco-Xn-9F8"/>
-                            <constraint firstItem="dwn-9V-kMu" firstAttribute="centerY" secondItem="ZIC-8z-lYj" secondAttribute="centerY" id="y1t-5W-3GG"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="WDl-jv-4Cv"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Quiz" image="quiz" id="8Ju-Jl-TgY"/>
-                    <connections>
-                        <outlet property="catImage" destination="dwn-9V-kMu" id="rzt-TT-9h6"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BrK-oD-7j9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3792.753623188406" y="520.98214285714289"/>
+            <point key="canvasLocation" x="3793" y="521"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="rrB-yj-XZP">
@@ -394,7 +352,6 @@
                     <connections>
                         <segue destination="za6-5D-Wpj" kind="relationship" relationship="viewControllers" id="R2g-vt-Ln0"/>
                         <segue destination="WXH-4n-hcE" kind="relationship" relationship="viewControllers" id="19h-pc-mnJ"/>
-                        <segue destination="OI4-yA-EHy" kind="relationship" relationship="viewControllers" id="htZ-fS-uwB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mc3-m6-OD6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -556,7 +513,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Yu-tZ-LeB">
-                                <rect key="frame" x="30" y="488" width="354" height="220"/>
+                                <rect key="frame" x="30" y="488" width="354" height="230"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0D-pj-Dgg">
                                         <rect key="frame" x="10" y="0.0" width="334" height="220"/>
@@ -579,7 +536,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfE-zo-mGA">
-                                <rect key="frame" x="132" y="738" width="150" height="40"/>
+                                <rect key="frame" x="132" y="748" width="150" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Bgi-dy-hPY"/>
                                     <constraint firstAttribute="width" constant="150" id="aqu-BR-fol"/>
@@ -634,6 +591,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JR9-bU-VDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5256.521739130435" y="-129.24107142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3Ya-Ob-LxM">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TF5-s7-Hev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="dgK-ed-aU8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ioK-v6-vwa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VES-71-lsO">
+                                <rect key="frame" x="20" y="91" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bVQ-g5-vap"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="5975" y="-129"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lNO-7Y-Q4K">
@@ -716,6 +695,5 @@
         <image name="cat-footprint" width="25" height="25"/>
         <image name="cat-profile" width="25" height="25"/>
         <image name="fluffy" width="497" height="495"/>
-        <image name="quiz" width="25" height="25"/>
     </resources>
 </document>
