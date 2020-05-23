@@ -32,7 +32,6 @@ class CatViewController: UIViewController {
     }
     
     func setUp() {
-
         breedLabel.text = cat?.name
         lifeLabel.text = cat!.life_span
         countryLabel.text = cat?.origin
@@ -45,6 +44,8 @@ class CatViewController: UIViewController {
         } else {
             isHypoLabel.text = "No"
         }
+        
+        styleViews()
     }
 
     func styleViews() {
@@ -57,7 +58,6 @@ class CatViewController: UIViewController {
     }
 
     func styleView(view: UIView) {
-//        view.backgroundColor = UIColor.init(red: 241/255, green: 160/255, blue: 143/255, alpha: 1)
         view.layer.cornerRadius = 15
         view.layer.masksToBounds = true
         view.layer.shadowColor = UIColor.black.cgColor
