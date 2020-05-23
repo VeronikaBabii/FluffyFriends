@@ -13,7 +13,7 @@ import FirebaseFirestore
 import FirebaseStorage
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     var cats = [Cat]()
     
     var allBreeds = [String]()
