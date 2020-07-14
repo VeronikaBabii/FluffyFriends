@@ -55,7 +55,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
-    func downloadJSON(completed: @escaping () -> () ) {
+    func downloadJSON(completed: @escaping () -> ()) {
         
         let url = URL(string: "https://api.thecatapi.com/v1/breeds")
         

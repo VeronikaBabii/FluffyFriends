@@ -10,6 +10,7 @@
 		1519DBB22462F3CC0058F2C9 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519DBB12462F3CC0058F2C9 /* Cat.swift */; };
 		1519DBB62463FF420058F2C9 /* CatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519DBB52463FF420058F2C9 /* CatViewController.swift */; };
 		1545C9172468736D00F492D4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1545C9162468736D00F492D4 /* TabBarViewController.swift */; };
+		155D5A0E24B3C3B900197832 /* FluffyFriendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155D5A0D24B3C3B900197832 /* FluffyFriendsTests.swift */; };
 		15A5BC6724617F1500A93B02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A5BC6624617F1500A93B02 /* AppDelegate.swift */; };
 		15A5BC6924617F1500A93B02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A5BC6824617F1500A93B02 /* SceneDelegate.swift */; };
 		15A5BC6B24617F1500A93B02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A5BC6A24617F1500A93B02 /* ViewController.swift */; };
@@ -27,10 +28,23 @@
 		763DE62B9636B83990D9D1FE /* Pods_FluffyFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60259BD95BC79CBA76BE5888 /* Pods_FluffyFriends.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		155D5A1024B3C3B900197832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15A5BC5B24617F1500A93B02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15A5BC6224617F1500A93B02;
+			remoteInfo = FluffyFriends;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1519DBB12462F3CC0058F2C9 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		1519DBB52463FF420058F2C9 /* CatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewController.swift; sourceTree = "<group>"; };
 		1545C9162468736D00F492D4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		155D5A0B24B3C3B900197832 /* FluffyFriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FluffyFriendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		155D5A0D24B3C3B900197832 /* FluffyFriendsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluffyFriendsTests.swift; sourceTree = "<group>"; };
+		155D5A0F24B3C3B900197832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15A5BC6324617F1500A93B02 /* FluffyFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FluffyFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A5BC6624617F1500A93B02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15A5BC6824617F1500A93B02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +67,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		155D5A0824B3C3B900197832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15A5BC6024617F1500A93B02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,10 +85,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		155D5A0C24B3C3B900197832 /* FluffyFriendsTests */ = {
+			isa = PBXGroup;
+			children = (
+				155D5A0D24B3C3B900197832 /* FluffyFriendsTests.swift */,
+				155D5A0F24B3C3B900197832 /* Info.plist */,
+			);
+			path = FluffyFriendsTests;
+			sourceTree = "<group>";
+		};
+		156EE8DC24AC917C004077BB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				15A5BC6C24617F1500A93B02 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		15A5BC5A24617F1500A93B02 = {
 			isa = PBXGroup;
 			children = (
 				15A5BC6524617F1500A93B02 /* FluffyFriends */,
+				155D5A0C24B3C3B900197832 /* FluffyFriendsTests */,
 				15A5BC6424617F1500A93B02 /* Products */,
 				78C6A415347BB76BFA5E6E30 /* Pods */,
 				2F66D5F505E0205751F560E3 /* Frameworks */,
@@ -78,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				15A5BC6324617F1500A93B02 /* FluffyFriends.app */,
+				155D5A0B24B3C3B900197832 /* FluffyFriendsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,7 +131,7 @@
 				15A5BC7B24617F3500A93B02 /* View Controllers */,
 				15ED74BB246F1E6A0080DF22 /* Breeds */,
 				15ED74B8246F19210080DF22 /* Gallery */,
-				15A5BC6C24617F1500A93B02 /* Main.storyboard */,
+				156EE8DC24AC917C004077BB /* Storyboards */,
 				15A5BC6F24617F1600A93B02 /* Assets.xcassets */,
 				15A5BC7124617F1600A93B02 /* LaunchScreen.storyboard */,
 				15A5BC862461BFF700A93B02 /* GoogleService-Info.plist */,
@@ -159,6 +199,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		155D5A0A24B3C3B900197832 /* FluffyFriendsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 155D5A1224B3C3B900197832 /* Build configuration list for PBXNativeTarget "FluffyFriendsTests" */;
+			buildPhases = (
+				155D5A0724B3C3B900197832 /* Sources */,
+				155D5A0824B3C3B900197832 /* Frameworks */,
+				155D5A0924B3C3B900197832 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				155D5A1124B3C3B900197832 /* PBXTargetDependency */,
+			);
+			name = FluffyFriendsTests;
+			productName = FluffyFriendsTests;
+			productReference = 155D5A0B24B3C3B900197832 /* FluffyFriendsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		15A5BC6224617F1500A93B02 /* FluffyFriends */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15A5BC7724617F1600A93B02 /* Build configuration list for PBXNativeTarget "FluffyFriends" */;
@@ -184,10 +242,14 @@
 		15A5BC5B24617F1500A93B02 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Veronika Babii";
 				TargetAttributes = {
+					155D5A0A24B3C3B900197832 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 15A5BC6224617F1500A93B02;
+					};
 					15A5BC6224617F1500A93B02 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
@@ -207,11 +269,19 @@
 			projectRoot = "";
 			targets = (
 				15A5BC6224617F1500A93B02 /* FluffyFriends */,
+				155D5A0A24B3C3B900197832 /* FluffyFriendsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		155D5A0924B3C3B900197832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15A5BC6124617F1500A93B02 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,6 +338,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		155D5A0724B3C3B900197832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				155D5A0E24B3C3B900197832 /* FluffyFriendsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15A5BC5F24617F1500A93B02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +368,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		155D5A1124B3C3B900197832 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15A5BC6224617F1500A93B02 /* FluffyFriends */;
+			targetProxy = 155D5A1024B3C3B900197832 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		15A5BC6C24617F1500A93B02 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -310,6 +396,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		155D5A1324B3C3B900197832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FluffyFriendsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.veronikababii.FluffyFriendsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FluffyFriends.app/FluffyFriends";
+			};
+			name = Debug;
+		};
+		155D5A1424B3C3B900197832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FluffyFriendsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.veronikababii.FluffyFriendsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FluffyFriends.app/FluffyFriends";
+			};
+			name = Release;
+		};
 		15A5BC7524617F1600A93B02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -430,12 +556,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMCVANXMFC;
 				INFOPLIST_FILE = FluffyFriends/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.veronikababii.FluffyFriends;
+				PRODUCT_BUNDLE_IDENTIFIER = com.veronika.FF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -448,12 +575,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMCVANXMFC;
 				INFOPLIST_FILE = FluffyFriends/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.veronikababii.FluffyFriends;
+				PRODUCT_BUNDLE_IDENTIFIER = com.veronika.FF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -463,6 +591,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		155D5A1224B3C3B900197832 /* Build configuration list for PBXNativeTarget "FluffyFriendsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				155D5A1324B3C3B900197832 /* Debug */,
+				155D5A1424B3C3B900197832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		15A5BC5E24617F1500A93B02 /* Build configuration list for PBXProject "FluffyFriends" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
