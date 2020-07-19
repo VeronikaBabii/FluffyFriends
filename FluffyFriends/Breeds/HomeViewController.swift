@@ -12,14 +12,13 @@ import FirebaseAuth
 import FirebaseFirestore
 import FirebaseStorage
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController {
     
     var cats = [Cat]()
     
-    var searching = false
+    let limit = 14
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +30,45 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    // to hide navbar
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    // pass the data to the CatVC
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? CatViewController {
+            destination.cat = cats[(tableView.indexPathForSelectedRow?.row)!]
+        }
+    }
+    
+    func downloadJSON(completed: @escaping () -> ()) {
+        let url = URL(string: "https://api.thecatapi.com/v1/breeds")
+        
+        URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            
+            if error == nil {
+                do {
+                    self.cats = try JSONDecoder().decode([Cat].self, from: data!)
+                    
+                    DispatchQueue.main.async { completed() }
+                    
+                } catch {
+                    print("JSON Error")
+                }
+            }
+        }.resume()
+    }
+}
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cats.count
@@ -48,30 +86,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         performSegue(withIdentifier: "showDetails", sender: self)
     }
     
-    // pass the data
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? CatViewController {
-            destination.cat = cats[(tableView.indexPathForSelectedRow?.row)!]
-        }
-    }
-    
-    func downloadJSON(completed: @escaping () -> ()) {
-        
-        let url = URL(string: "https://api.thecatapi.com/v1/breeds")
-        
-        URLSession.shared.dataTask(with: url!) { (data, response, error) in
-            
-            if error == nil {
-                do {
-                    self.cats = try JSONDecoder().decode([Cat].self, from: data!)
-                    
-                    DispatchQueue.main.async {
-                        completed()
-                    }
-                } catch {
-                    print("JSON Error")
-                }
-            }
-        }.resume()
+    // set height of the cells
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 110
     }
 }
